@@ -79,6 +79,11 @@ img {
   padding-bottom: 50px;
 }
 
+.ptb-25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .pt-50 {
   padding-top: 50px;
 }
@@ -3553,8 +3558,8 @@ Main News Slider Area CSS
 Page Title CSS
 =================================================*/
 .page-title-area {
-  padding-top: 35px;
-  padding-bottom: 32px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #e1e1e1;
 }
 
@@ -3606,6 +3611,7 @@ Pagination Area CSS
 =================================================*/
 .pagination-area {
   margin-top: 30px;
+  text-align: center;
 }
 .pagination-area .page-numbers {
   width: 35px;
@@ -3622,7 +3628,7 @@ Pagination Area CSS
   text-align: center;
 }
 .pagination-area .page-numbers.current, .pagination-area .page-numbers:hover, .pagination-area .page-numbers:focus {
-  background: #dc472e;
+  background: #1061B3;
   color: #ffffff;
   box-shadow: 0 2px 10px 0 #d8dde6;
 }
@@ -4407,7 +4413,7 @@ News Area CSS
 }
 .single-news-item .news-content span {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   color: #1061B3;
 }
 .single-news-item .news-content h3 {
@@ -4434,6 +4440,11 @@ News Area CSS
 .single-news-item .news-content p {
   font-weight: 400;
   font-size: 14px;
+}
+.single-news-item .news-content .m-date {
+  font-size: 12px;
+  color: #656565;
+  font-weight: 400;
 }
 .single-news-item .news-content p a {
   color: #656565;
@@ -5179,6 +5190,16 @@ Buy Now Btn
   object-fit: cover;
 }
 
+.index-img {
+  height: 225px;
+  object-fit: cover;
+}
+
+.detail-img {
+  height: 475px;
+  object-fit: cover;
+}
+
 /* mini table */
 
 .box-table {
@@ -5188,11 +5209,11 @@ Buy Now Btn
   min-height: 300px;
 }
 
-.table {
+.table-home {
   font-size: 11px;
 } 
 
-.table>:not(caption)>*>* {
+.table-home>:not(caption)>*>* {
   padding: 5px 3px !important;
 }
 
@@ -5200,6 +5221,19 @@ Buy Now Btn
   background: rgba(238, 238, 238, 1) !important;
   color: #000000;
   text-align: center;
+}
+
+.box-cal-detail {
+  background: #E1EEFF;
+  border: 1px solid #06538C;
+  border-radius: 7px;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+.box-cal-detail h5 {
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .kol-imp {
@@ -5244,4 +5278,51 @@ Buy Now Btn
 
 .viewmore a:hover {
   color: #000000;
+}
+
+/* custom button */
+.economic-calendar-button {
+  margin-bottom: 20px;
+}
+.btn-cal-active {
+  border-radius: 5px !important;
+  padding: 7px 20px;
+  background: #1061B3;
+  border-color: #1061B3;
+  color: #ffffff;
+  margin: 0px 7px 7px 0px;
+}
+.btn-cal-active:hover{
+  background: #06538C;
+  border-color: #06538C;
+  color: #ffffff;
+}
+
+.btn-cal {
+  border-radius: 5px !important;
+  padding: 7px 20px;
+  background: #ffffff;
+  border-color: #1061B3;
+  color: #1061B3;
+  margin: 0px 7px 7px 0px;
+}
+.btn-cal:hover {
+  background: #1061B3;
+  border-color: #1061B3;
+  color: #ffffff;
+}
+
+.btn-filter {
+  border-radius: 5px !important;
+  padding: 7px 20px;
+  background: #1061B3;
+  border-color: #1061B3;
+  color: #ffffff;
+  margin: 0px 7px 7px 0px !important;
+}
+
+.btn-filter:hover{
+  background: #FD9223;
+  border-color: #FD9223;
+  color: #ffffff;
 }
