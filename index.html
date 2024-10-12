@@ -49,13 +49,16 @@
         <!-- Start Top Header Area -->
         <div class="top-header-area bg-color">
             <div class="container">
-                <div class="row align-items-center">
+
+                <!-- show on Desktop -->
+                <div class="row align-items-center sDesktop">
                     <div class="col-lg-6">
                         <ul class="top-header-time">
                             <li><i class='bx bx-calendar'></i><span class="ms-2 me-2">Sun, Sep 8, 2024</span>|</li>
                             <li><strong>JKT</strong> 09:12</li>
                             <li><strong>TKY</strong> 11:12</li>
                             <li><strong>HK</strong> 10:12</li>
+                            <li><strong>LDN</strong> 03:12</li>
                         </ul>
                     </div>
                     <div class="col-lg-6">
@@ -69,13 +72,51 @@
                                 </div>
                             </li>
 
-                            <li>
+                            <!--<li>
                                 <i class='bx bx-user'></i>
                                 <a href="login.html">Login</a>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                 </div>
+
+                <!-- show on Mobile -->
+                <div class="justify-content-between sMobile">
+                    <div>
+                        <ul class="top-header-time">
+                            <li><i class='bx bx-calendar'></i><span class="ms-2 me-2">Sun, Sep 8, 2024</span>|</li>
+                            <li class="dropdown">
+                                <i class='bx bx bxs-time'></i><span class="ms-2 me-2">World Time</span>
+                                <div class="dropdown-content">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>JKT</strong> 09:12</li>
+                                        <li class="list-group-item"><strong>TKY</strong> 11:12</li>
+                                        <li class="list-group-item"><strong>HK</strong> 10:12</li>
+                                        <li class="list-group-item"><strong>LDN</strong> 03:12</li>
+                                      </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="top-header-others">
+                            <li>
+                                <div class="languages-list">
+                                    <select>
+                                        <option value="1">English</option>
+                                        <option value="2">Bahasa</option>
+                                    </select>
+                                </div>
+                            </li>
+
+                            <!--<li>
+                                <i class='bx bx-user'></i>
+                                <a href="login.html">Login</a>
+                            </li>-->
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- End Top Header Area -->
@@ -296,6 +337,23 @@
                     </div>
                 </div>
             </div>
+            <div class="social-top sMobile">
+                <a href="#" class="facebook" target="_blank">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="#" class="twitter" target="_blank">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="#" class="pinterest" target="_blank">
+                    <i class='bx bxl-tiktok' ></i>
+                </a>
+                <a href="#" class="linkedin" target="_blank">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="#" class="linkedin" target="_blank">
+                    <i class='bx bxl-youtube'></i>
+                </a>
+            </div>
         </div>
         <!-- End Navbar Area -->
 
@@ -345,76 +403,84 @@
                                 <span class="label-table">Economic Calendar</span>
                                 <span class="viewmore"><a href="economic-calendar.html">view more</a></span>
                             </div>
-                            <div>
+                            <div class="cal-home">
                                 <table class="table table-responsive table-hover table-home">
                                     <thead>
-                                      <tr>
-                                        <th class="table-head">Time</th>
-                                        <th class="table-head">Country</th>
-                                        <th class="table-head">Impact</th>
-                                        <th class="table-head">Figures</th>
-                                        <th class="table-head">Forecast</th>
-                                      </tr>
+                                        <tr>
+                                            <th class="table-head">Time</th>
+                                            <th class="table-head">Country</th>
+                                            <th class="table-head">Impact</th>
+                                            <th class="table-head">Figures</th>
+                                            <th class="table-head">Forecast</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td class="text-center">17.30</td>
-                                            <td class="text-center">AUD</td>
-                                            <td class="kol-imp"><span class="text-green">L</span></td>
-                                            <td class="text-start">Retail Sales m/m</td>
-                                            <td class="text-end">0.60%</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">13.00</td>
-                                            <td class="text-center">EUR</td>
-                                            <td class="kol-imp"><span class="text-green">L</span></td>
-                                            <td class="text-start">German Trade Balance</td>
-                                            <td class="text-end">4.0B</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">13:45</td>
-                                            <td class="text-center">EUR</td>
-                                            <td class="kol-imp"><span class="text-green">L</span></td>
-                                            <td class="text-start">French Indusrial Production m/m</td>
-                                            <td class="text-end">-0.10%</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">14:15</td>
-                                            <td class="text-center">EUR</td>
-                                            <td class="kol-imp"><span class="text-green">L</span></td>
-                                            <td class="text-start">Spanish Services PMI</td>
-                                            <td class="text-end">50.4</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">14:45</td>
-                                            <td class="text-center">EUR</td>
-                                            <td class="kol-imp"><span class="text-green">L</span></td>
-                                            <td class="text-start">Italian Services PMI</td>
-                                            <td class="text-end">49.4</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">14:50</td>
-                                            <td class="text-center">EUR</td>
-                                            <td class="kol-imp"><span class="text-green">L</span></td>
-                                            <td class="text-start">French Final Services PMI</td>
-                                            <td class="text-end">53</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">15:00</td>
-                                            <td class="text-center">EUR</td>
-                                            <td class="kol-imp"><span class="text-yellow">M</span></td>
-                                            <td class="text-start">Final Services PMI (EUR)</td>
-                                            <td class="text-end">48.4</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">15:30</td>
-                                            <td class="text-center">GBP</td>
-                                            <td class="kol-imp"><span class="text-green">L</span></td>
-                                            <td class="text-start">Final Services PMI</td>
-                                            <td class="text-end">49.2</td>
-                                          </tr>
-                                    </tbody>
-                                  </table>
+                                                                        <tr>
+                                                <td class="text-center">12.00</td>
+                                                <td class="text-center">JPN</td>
+                                                <td class="kol-imp"><span class="text-green">L</span></td>
+                                                <td class="text-start">Leading Indicators </td>
+                                                <td class="text-end">107.2%</td>
+                                            </tr>
+                            
+                                                                        <tr>
+                                                <td class="text-center">13.00</td>
+                                                <td class="text-center">EUR</td>
+                                                <td class="kol-imp"><span class="text-green">L</span></td>
+                                                <td class="text-start">German Factory Orders m/m</td>
+                                                <td class="text-end">-1.9%</td>
+                                            </tr>
+                            
+                                                                        <tr>
+                                                <td class="text-center">13.00</td>
+                                                <td class="text-center">GBP</td>
+                                                <td class="kol-imp"><span class="text-green">L</span></td>
+                                                <td class="text-start">Halifax HPI m/m</td>
+                                                <td class="text-end">0.2%</td>
+                                            </tr>
+                            
+                                                                        <tr>
+                                                <td class="text-center">14.00</td>
+                                                <td class="text-center">CHF</td>
+                                                <td class="kol-imp"><span class="text-green">L</span></td>
+                                                <td class="text-start">Foreign Currency Reserves / Cadangan Devisa</td>
+                                                <td class="text-end"></td>
+                                            </tr>
+                            
+                                                                        <tr>
+                                                <td class="text-center">15.30</td>
+                                                <td class="text-center">EUR</td>
+                                                <td class="kol-imp"><span class="text-green">L</span></td>
+                                                <td class="text-start">Sentix Investor Confidence</td>
+                                                <td class="text-end">-14.6</td>
+                                            </tr>
+                            
+                                                                        <tr>
+                                                <td class="text-center">16.00</td>
+                                                <td class="text-center">EUR</td>
+                                                <td class="kol-imp"><span class="text-green">L</span></td>
+                                                <td class="text-start">Retail Sales m/m (EUR)</td>
+                                                <td class="text-end">0.2%</td>
+                                            </tr>
+                            
+                                                                        <tr>
+                                                <td class="text-center">All Day</td>
+                                                <td class="text-center">AUD</td>
+                                                <td class="kol-imp"><span class="text-green">L</span></td>
+                                                <td class="text-start">Bank Holiday</td>
+                                                <td class="text-end">-</td>
+                                            </tr>
+                            
+                                                                        <tr>
+                                                <td class="text-center">All Day</td>
+                                                <td class="text-center">CHN</td>
+                                                <td class="kol-imp"><span class="text-green">L</span></td>
+                                                <td class="text-start">Bank Holiday</td>
+                                                <td class="text-end">-</td>
+                                            </tr>
+                            
+                                                </tbody>
+                                </table>
                             </div>
                             <!-- end economic calendar only 8 row -->
 
@@ -424,145 +490,37 @@
                                 <span class="viewmore"><a href="live-price.html">view more</a></span>
                             </div>
                             <div>
-                                <table class="table table-responsive table-hover table-home">
+                                <table id="myAjaxQuotes_moduleQuote1" class="table table-responsive table-hover table-home">
+
                                     <thead>
-                                      <tr>
-                                        <th class="table-head">Symbol</th>
-                                        <th class="table-head">Open</th>
-                                        <th class="table-head">Last</th>
-                                        <th class="table-head">Chg</th>
-                                        <th class="table-head">Chg (%)</th>
-                                      </tr>
+                                        <tr>
+                                            <th class="table-head text-start">Symbol</th><th class="table-head text-end">Last</th><th class="table-head text-end">Open</th><th class="table-head text-end">Close</th>			</tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="text-center">HSI</td>
-                                            <td class="text-end">30353.83</td>
-                                            <td class="text-end">30636.2</td>
-                                            <td class="text-end">382.84</td>
-                                            <td class="text-end">1.26</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">HSI</td>
-                                            <td class="text-end">30353.83</td>
-                                            <td class="text-end">30636.2</td>
-                                            <td class="text-end">382.84</td>
-                                            <td class="text-end">1.26</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">HSI</td>
-                                            <td class="text-end">30353.83</td>
-                                            <td class="text-end"><span class="text-green">30636.2</span></td>
-                                            <td class="text-end">382.84</td>
-                                            <td class="text-end">1.26</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">HSI</td>
-                                            <td class="text-end">30353.83</td>
-                                            <td class="text-end">30636.2</td>
-                                            <td class="text-end">382.84</td>
-                                            <td class="text-end">1.26</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">HSI</td>
-                                            <td class="text-end">30353.83</td>
-                                            <td class="text-end"><span class="text-red">30636.2</span></td>
-                                            <td class="text-end">382.84</td>
-                                            <td class="text-end">1.26</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">HSI</td>
-                                            <td class="text-end">30353.83</td>
-                                            <td class="text-end">30636.2</td>
-                                            <td class="text-end">382.84</td>
-                                            <td class="text-end">1.26</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">HSI</td>
-                                            <td class="text-end">30353.83</td>
-                                            <td class="text-end">30636.2</td>
-                                            <td class="text-end">382.84</td>
-                                            <td class="text-end">1.26</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">HSI</td>
-                                            <td class="text-end">30353.83</td>
-                                            <td class="text-end">30636.2</td>
-                                            <td class="text-end">382.84</td>
-                                            <td class="text-end">1.26</td>
-                                          </tr>
-                                          <tr></tr>
-                                            <td class="text-center">HSI</td>
-                                            <td class="text-end">30353.83</td>
-                                            <td class="text-end">30636.2</td>
-                                            <td class="text-end">382.84</td>
-                                            <td class="text-end">1.26</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">HSI</td>
-                                            <td class="text-end">30353.83</td>
-                                            <td class="text-end">30636.2</td>
-                                            <td class="text-end">382.84</td>
-                                            <td class="text-end">1.26</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">HSI</td>
-                                            <td class="text-end">30353.83</td>
-                                            <td class="text-end">30636.2</td>
-                                            <td class="text-end">382.84</td>
-                                            <td class="text-end">1.26</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">HSI</td>
-                                            <td class="text-end">30353.83</td>
-                                            <td class="text-end">30636.2</td>
-                                            <td class="text-end">382.84</td>
-                                            <td class="text-end">1.26</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">HSI</td>
-                                            <td class="text-end">30353.83</td>
-                                            <td class="text-end">30636.2</td>
-                                            <td class="text-end">382.84</td>
-                                            <td class="text-end">1.26</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">HSI</td>
-                                            <td class="text-end">30353.83</td>
-                                            <td class="text-end">30636.2</td>
-                                            <td class="text-end">382.84</td>
-                                            <td class="text-end">1.26</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">HSI</td>
-                                            <td class="text-end">30353.83</td>
-                                            <td class="text-end">30636.2</td>
-                                            <td class="text-end">382.84</td>
-                                            <td class="text-end">1.26</td>
-                                          </tr>
-                                          <tr>
-                                            <td class="text-center">HSI</td>
-                                            <td class="text-end">30353.83</td>
-                                            <td class="text-end">30636.2</td>
-                                            <td class="text-end">382.84</td>
-                                            <td class="text-end">1.26</td>
-                                          </tr>
-                                          <tr></tr>
-                                            <td class="text-center">HSI</td>
-                                            <td class="text-end">30353.83</td>
-                                            <td class="text-end">30636.2</td>
-                                            <td class="text-end">382.84</td>
-                                            <td class="text-end">1.26</td>
-                                          </tr>                                  
+                                            <td id="moduleQuote1-myAjaxQuotes-Symbol1" class="text-start">Emas</td>
+                                            <td id="moduleQuote1-myAjaxQuotes-Last1" class="text-end text-red">2646.15</td>
+                                            <td id="moduleQuote1-myAjaxQuotes-Open1" class="text-end ">2650.7</td>
+                                            <td id="moduleQuote1-myAjaxQuotes-Close1" class="text-end ">2651.2</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="moduleQuote1-myAjaxQuotes-Symbol2" class="text-start">Silver</td>
+                                            <td id="moduleQuote1-myAjaxQuotes-Last2" class="text-end text-green">31.713</td>
+                                            <td id="moduleQuote1-myAjaxQuotes-Open2" class="text-end ">32.258</td>
+                                            <td id="moduleQuote1-myAjaxQuotes-Close2" class="text-end ">32.189</td>
+                                        </tr>
+                                        <tr><td id="moduleQuote1-myAjaxQuotes-Symbol3" class="text-start">Hangseng</td><td id="moduleQuote1-myAjaxQuotes-Last3" class="text-end ">23099.78</td><td id="moduleQuote1-myAjaxQuotes-Open3" class="text-end ">22948.35</td><td id="moduleQuote1-myAjaxQuotes-Close3" class="text-end ">22736.87</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol4" class="text-start">Nikkei 225</td><td id="moduleQuote1-myAjaxQuotes-Last4" class="text-end ">39332.74</td><td id="moduleQuote1-myAjaxQuotes-Open4" class="text-end ">39239.92</td><td id="moduleQuote1-myAjaxQuotes-Close4" class="text-end ">38635.62</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol5" class="text-start">AUDUSD</td><td id="moduleQuote1-myAjaxQuotes-Last5" class="text-end ">0.6762</td><td id="moduleQuote1-myAjaxQuotes-Open5" class="text-end ">0.6797</td><td id="moduleQuote1-myAjaxQuotes-Close5" class="text-end ">0.6797</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol6" class="text-start">EURUSD</td><td id="moduleQuote1-myAjaxQuotes-Last6" class="text-end text-green">1.0974</td><td id="moduleQuote1-myAjaxQuotes-Open6" class="text-end ">1.0976</td><td id="moduleQuote1-myAjaxQuotes-Close6" class="text-end ">1.0976</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol7" class="text-start">GBPUSD</td><td id="moduleQuote1-myAjaxQuotes-Last7" class="text-end text-red">1.3079</td><td id="moduleQuote1-myAjaxQuotes-Open7" class="text-end ">1.3126</td><td id="moduleQuote1-myAjaxQuotes-Close7" class="text-end ">1.3126</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol8" class="text-start">USDCHF</td><td id="moduleQuote1-myAjaxQuotes-Last8" class="text-end text-green">0.8561</td><td id="moduleQuote1-myAjaxQuotes-Open8" class="text-end ">0.8449</td><td id="moduleQuote1-myAjaxQuotes-Close8" class="text-end ">0.8582</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol9" class="text-start">USDJPY</td><td id="moduleQuote1-myAjaxQuotes-Last9" class="text-end text-green">148.19</td><td id="moduleQuote1-myAjaxQuotes-Open9" class="text-end ">148.7</td><td id="moduleQuote1-myAjaxQuotes-Close9" class="text-end ">148.71</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol10" class="text-start">Dow Jones</td><td id="moduleQuote1-myAjaxQuotes-Last10" class="text-end text-green">42231.37</td><td id="moduleQuote1-myAjaxQuotes-Open10" class="text-end ">42289.51</td><td id="moduleQuote1-myAjaxQuotes-Close10" class="text-end ">42352.75</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol11" class="text-start">Financial Times Stock Exchange</td><td id="moduleQuote1-myAjaxQuotes-Last11" class="text-end text-green">8302.37</td><td id="moduleQuote1-myAjaxQuotes-Open11" class="text-end ">8280.63</td><td id="moduleQuote1-myAjaxQuotes-Close11" class="text-end ">8280.63</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol12" class="text-start">Nasdaq</td><td id="moduleQuote1-myAjaxQuotes-Last12" class="text-end text-green">19105.62</td><td id="moduleQuote1-myAjaxQuotes-Open12" class="text-end ">19150.27</td><td id="moduleQuote1-myAjaxQuotes-Close12" class="text-end ">19120.93</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol13" class="text-start">RP</td><td id="moduleQuote1-myAjaxQuotes-Last13" class="text-end ">15675</td><td id="moduleQuote1-myAjaxQuotes-Open13" class="text-end ">15479</td><td id="moduleQuote1-myAjaxQuotes-Close13" class="text-end ">15480</td></tr>
                                     </tbody>
-                                  </table>
+                                </table>
                             </div>
                             <!-- end live price -->
                         </div>
                     </div>
                     
                     <div class="col-lg-6">
-                        <div class="single-new-news-box">
+
+                        <!-- headline news on Desktop -->
+                        <div class="single-new-news-box sDesktop">
                             <div class="new-news-image">
                                 <a href="news-detail.html">
                                     <img src="assets/img/news/S-P-500.jpg" class="headline-new" alt="image">
@@ -583,6 +541,20 @@
                                     </div>
                                     <div class="mt-3 text-end more"><a href="news-detail.html">view more</a></div>
                                 </div>
+                            </div>
+                        </div>
+
+                        <!-- headline news on Mobile -->
+                        <div class="single-main-news sMobile">
+                            <a href="#">
+                                <img src="assets/img/news/S-P-500.jpg" class="headline-mobile" alt="image">
+                            </a>
+                            <div class="news-content">
+                                <div class="tag">Market Update</div>
+                                <h3>
+                                    <a href="news-detail.html">S&P 500 Tumbles Friday to Post Worst Week Since 2023, Nasdaq Drops 2% for Worst Weekly ...s</a>
+                                </h3>
+                                <span>28 September, 2024</span>
                             </div>
                         </div>
                     </div>
@@ -1186,14 +1158,16 @@
         <!-- Start Copy Right Area -->
         <div class="copyright-area">
             <div class="container">
-                <div class="copyright-area-content">
-                    <div>
+                <div class="row ftr-align">
+                    <div class="col-lg-4 ftr-margin">
                         <img src="assets/img/NewsMaker-23-logo-white.png" class="copyright-logo" alt="News.Maker 23">
                     </div>
-                    <p>
-                        © 2024 News.Maker 23 - All Rights Reserved. 
-                    </p>
-                    <div class="single-footer-widget">
+                    <div class="col-lg-4 ftr-margin copyright-text">
+                       
+                            © 2024 News.Maker 23 - All Rights Reserved. 
+                       
+                    </div>
+                    <div class="col-lg-4 single-footer-widget">
                         <ul class="social">
                             <li>
                                 <a href="#" class="facebook" target="_blank">
@@ -1226,6 +1200,50 @@
             </div>
         </div>
         <!-- End Copy Right Area -->
+
+                <!-- Start Copy Right Area >
+                <div class="copyright-area">
+                    <div class="container">
+                        <div class="copyright-area-content">
+                            <div>
+                                <img src="assets/img/NewsMaker-23-logo-white.png" class="copyright-logo" alt="News.Maker 23">
+                            </div>
+                            <p>
+                                © 2024 News.Maker 23 - All Rights Reserved. 
+                            </p>
+                            <div class="single-footer-widget">
+                                <ul class="social">
+                                    <li>
+                                        <a href="#" class="facebook" target="_blank">
+                                            <i class='bx bxl-facebook'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="twitter" target="_blank">
+                                            <i class='bx bxl-instagram'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pinterest" target="_blank">
+                                            <i class='bx bxl-tiktok' ></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="linkedin" target="_blank">
+                                            <i class='bx bxl-twitter'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="linkedin" target="_blank">
+                                            <i class='bx bxl-youtube'></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 End Copy Right Area -->
 
         <!-- Start Go Top Area -->
         <div class="go-top">

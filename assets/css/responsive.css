@@ -363,6 +363,32 @@
   .blog-details-desc .article-content .desc-overview .desc-image img {
     margin-bottom: 20px;
   }
+  .cal-home {
+    height: auto;
+  }
+  .sDesktop {
+    visibility: hidden;
+    display: none;
+  }
+  .sMobile {
+    visibility: visible;
+    display: flex;
+  }
+  .top-header-others .languages-list .nice-select {
+    padding-left: 26px !important;
+  }
+  .top-header-others .languages-list .nice-select .list {
+    width: 100px;
+  }
+  .ftr-margin {
+    margin-bottom: 15px;
+  }
+  .ftr-align {
+    text-align: center;
+  }
+  .single-footer-widget .social {
+    margin-top: 0;
+  }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .top-header-area.bg-color {
@@ -391,6 +417,31 @@
   }
   .login-form form .lost-your-password {
     text-align: right;
+    margin-top: 0;
+  }
+  .cal-home {
+    height: auto;
+  }
+  .sDesktop {
+    visibility: hidden;
+    display: none;
+  }
+  .sMobile {
+    visibility: visible;
+  }
+  .top-header-others .languages-list .nice-select {
+    padding-left: 26px !important;
+  }
+  .top-header-others .languages-list .nice-select .list {
+    width: 100px;
+  }
+  .ftr-margin {
+    margin-bottom: 15px;
+  }
+  .ftr-align {
+    text-align: center;
+  }
+  .single-footer-widget .social {
     margin-top: 0;
   }
 }
@@ -694,6 +745,23 @@
   .blog-details-desc .article-content .desc-overview .desc-image img {
     margin-bottom: 20px;
   }
+  .cal-home {
+    height: auto;
+  }
+  .sDesktop {
+    visibility: hidden;
+    display: none;
+  }
+  .sMobile {
+    visibility: visible;
+    display: flex;
+  }
+  .top-header-others .languages-list .nice-select {
+    padding-left: 26px !important;
+  }
+  .top-header-others .languages-list .nice-select .list {
+    width: 100px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .top-header-area.bg-color {
@@ -859,6 +927,9 @@
   }
   .new-news-area {
     padding-bottom: 50px;
+  }
+  .cal-home {
+    height: auto;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
