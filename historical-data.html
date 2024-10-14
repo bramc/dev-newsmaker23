@@ -49,13 +49,16 @@
         <!-- Start Top Header Area -->
         <div class="top-header-area bg-color">
             <div class="container">
-                <div class="row align-items-center">
+
+                <!-- show on Desktop -->
+                <div class="row align-items-center sDesktop">
                     <div class="col-lg-6">
                         <ul class="top-header-time">
                             <li><i class='bx bx-calendar'></i><span class="ms-2 me-2">Sun, Sep 8, 2024</span>|</li>
                             <li><strong>JKT</strong> 09:12</li>
                             <li><strong>TKY</strong> 11:12</li>
                             <li><strong>HK</strong> 10:12</li>
+                            <li><strong>LDN</strong> 03:12</li>
                         </ul>
                     </div>
                     <div class="col-lg-6">
@@ -69,13 +72,51 @@
                                 </div>
                             </li>
 
-                            <li>
+                            <!--<li>
                                 <i class='bx bx-user'></i>
                                 <a href="login.html">Login</a>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                 </div>
+
+                <!-- show on Mobile -->
+                <div class="justify-content-between sMobile">
+                    <div>
+                        <ul class="top-header-time">
+                            <li><i class='bx bx-calendar'></i><span class="ms-2 me-2">Sun, Sep 8, 2024</span>|</li>
+                            <li class="dropdown">
+                                <i class='bx bx bxs-time'></i><span class="ms-2 me-2">World Time</span>
+                                <div class="dropdown-content">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>JKT</strong> 09:12</li>
+                                        <li class="list-group-item"><strong>TKY</strong> 11:12</li>
+                                        <li class="list-group-item"><strong>HK</strong> 10:12</li>
+                                        <li class="list-group-item"><strong>LDN</strong> 03:12</li>
+                                      </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="top-header-others">
+                            <li>
+                                <div class="languages-list">
+                                    <select>
+                                        <option value="1">English</option>
+                                        <option value="2">Bahasa</option>
+                                    </select>
+                                </div>
+                            </li>
+
+                            <!--<li>
+                                <i class='bx bx-user'></i>
+                                <a href="login.html">Login</a>
+                            </li>-->
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- End Top Header Area -->
@@ -296,6 +337,26 @@
                     </div>
                 </div>
             </div>
+
+            <!-- show on mobile -->
+            <div class="social-top sMobile">
+                <a href="#" class="facebook" target="_blank">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="#" class="twitter" target="_blank">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="#" class="pinterest" target="_blank">
+                    <i class='bx bxl-tiktok' ></i>
+                </a>
+                <a href="#" class="linkedin" target="_blank">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="#" class="linkedin" target="_blank">
+                    <i class='bx bxl-youtube'></i>
+                </a>
+            </div>
+
         </div>
         <!-- End Navbar Area -->
 
@@ -351,7 +412,7 @@
                     <div class="col-lg-8">
                         <div class="mb-4">
                             <!--Filter-->
-                            <div class="d-inline-flex date-con view-mob">
+                            <div class="d-inline-flex flex-wrap date-con view-mob">
                                 <select name="currencies" class="h-form">
                                     <option value="1">EUR/USD</option>
                                     <option value="2">USD/JPY</option>
@@ -370,6 +431,7 @@
                                 <div class="d-flex h-form"><span class="date-title">End</span><input name="Date-date-picker" class="form-control" type="date"><span id="endDateSelected"></div>
                                 
                                 <button class="btn btn-filter h-form">Filter</button>
+                                <button class="btn btn-filter h-form">Download</button>
                             </div>
                         </div>
                         <!-- table history -->

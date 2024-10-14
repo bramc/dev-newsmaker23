@@ -5348,7 +5348,7 @@ input.form-control {
 }
 
 .h-form {
-  margin: 0 10px 0 0;
+  margin: 0 10px 10px 0;
 }
 
 .date-title {
@@ -5384,7 +5384,7 @@ input.form-control {
   background-color: #f9f9f9;
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 9999 !important;
 }
 
 .dropdown:hover .dropdown-content {
@@ -5393,6 +5393,7 @@ input.form-control {
   margin-top: 14px;
   list-style: none;
   color: #656565;
+  z-index: 9999;
 }
 
 .social-top {
@@ -5401,6 +5402,7 @@ input.form-control {
   top: -30px;
   font-size: 20px;
   float: inline-start;
+  z-index: 999;
 }
 
 .social-top a  {

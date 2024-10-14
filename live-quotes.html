@@ -107,7 +107,7 @@
                                     <a href="index.html" class="nav-link active">
                                         Home 
                                     </a>
-                                </li> 
+                                </li>
 
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
@@ -333,281 +333,39 @@
         </div>
         </section>
         <!-- End News Ticker -->
-
+        
         <!-- Start Page Title -->
         <div class="page-title-area">
             <div class="container">
                 <div class="page-title-content">
-                    <h2>Market Analysis</h2>
+                    <h2>Live Quotes</h2>
                 </div>
             </div>
         </div>
         <!-- End Page Title -->
         
-        <!-- Start News Area -->
-        <section class="news-area ptb-25">
-            <div class="container-fluid">
+        <!-- Start New News Area -->
+        <section class="new-news-area">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-news-item">
-                            <div class="news-image">
-                                <a href="#">
-                                    <img src="assets/img/news/SM102.png" class="index-img" alt="image">
-                                </a>
-                            </div>
-    
-                            <div class="news-content mt-20">
-                                <span>Market Analysis</span>
-                                <h3>
-                                    <a href="#">Harga Perak Sedikit Berubah Pasca Rilis Data Inflasi AS</a>
-                                </h3>
-                                <p>Harga diperdagangkan sedikit berubah pada hari Rabu (11/9) setelah mengalami penurunan pasca  dirilisnya data inflasi dari Amerika yang menunjukkan ...</p>
-                                <span class="m-date">28 September 2024</span>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-lg-12 mb-5 overflow-auto">
+                        
+                        <table id="myAjaxQuotes_moduleQuote1" class="table table-responsive table-hover">
 
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-news-item">
-                            <div class="news-image">
-                                <a href="#">
-                                    <img src="assets/img/news/SM102.png" class="index-img" alt="image">
-                                </a>
-                            </div>
-    
-                            <div class="news-content mt-20">
-                                <span>Market Analysis</span>
-                                <h3>
-                                    <a href="#">Harga Perak Sedikit Berubah Pasca Rilis Data Inflasi AS</a>
-                                </h3>
-                                <span class="m-date">28 September 2024</span>
-                                <p>Harga diperdagangkan sedikit berubah pada hari Rabu (11/9) setelah mengalami penurunan pasca  dirilisnya data inflasi dari Amerika yang menunjukkan ...</p>
-                                
-                            </div>
-                        </div>
+                            <thead>
+                              <tr>
+                                <th class="table-head text-start">Symbol</th><th class="table-head text-end">Last</th><th class="table-head text-end">High</th><th class="table-head text-end">Low</th><th class="table-head text-end">Open</th><th class="table-head text-end">Close</th><th class="table-head text-end">Chg</th><th class="table-head text-end">Chg(%)</th>    </tr>
+                            </thead>
+                            <tbody>
+                              <tr><td id="moduleQuote1-myAjaxQuotes-Symbol1" class="text-start">Emas</td><td id="moduleQuote1-myAjaxQuotes-Last1" class="text-end text-green">2647.9</td><td id="moduleQuote1-myAjaxQuotes-High1" class="text-end ">2650.6</td><td id="moduleQuote1-myAjaxQuotes-Low1" class="text-end ">2645</td><td id="moduleQuote1-myAjaxQuotes-Open1" class="text-end ">2650.25</td><td id="moduleQuote1-myAjaxQuotes-Close1" class="text-end ">2655.4</td><td id="moduleQuote1-myAjaxQuotes-valueChange1" class="text-end text-green">-7.5</td><td id="moduleQuote1-myAjaxQuotes-percentChange1" class="text-end text-green">-0.28</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol2" class="text-start">Silver</td><td id="moduleQuote1-myAjaxQuotes-Last2" class="text-end text-red">31.263</td><td id="moduleQuote1-myAjaxQuotes-High2" class="text-end ">31.297</td><td id="moduleQuote1-myAjaxQuotes-Low2" class="text-end ">31.101</td><td id="moduleQuote1-myAjaxQuotes-Open2" class="text-end ">31.179</td><td id="moduleQuote1-myAjaxQuotes-Close2" class="text-end ">31.523</td><td id="moduleQuote1-myAjaxQuotes-valueChange2" class="text-end text-red">-0.26</td><td id="moduleQuote1-myAjaxQuotes-percentChange2" class="text-end text-red">-0.82</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol3" class="text-start">Hangseng</td><td id="moduleQuote1-myAjaxQuotes-Last3" class="text-end ">21274</td><td id="moduleQuote1-myAjaxQuotes-High3" class="text-end ">21448</td><td id="moduleQuote1-myAjaxQuotes-Low3" class="text-end ">20997</td><td id="moduleQuote1-myAjaxQuotes-Open3" class="text-end ">21272</td><td id="moduleQuote1-myAjaxQuotes-Close3" class="text-end ">21270</td><td id="moduleQuote1-myAjaxQuotes-valueChange3" class="text-end ">4</td><td id="moduleQuote1-myAjaxQuotes-percentChange3" class="text-end ">0.02</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol4" class="text-start">Nikkei 225</td><td id="moduleQuote1-myAjaxQuotes-Last4" class="text-end text-green">39660</td><td id="moduleQuote1-myAjaxQuotes-High4" class="text-end ">39955</td><td id="moduleQuote1-myAjaxQuotes-Low4" class="text-end ">39410</td><td id="moduleQuote1-myAjaxQuotes-Open4" class="text-end ">39590</td><td id="moduleQuote1-myAjaxQuotes-Close4" class="text-end ">39615</td><td id="moduleQuote1-myAjaxQuotes-valueChange4" class="text-end text-green">45</td><td id="moduleQuote1-myAjaxQuotes-percentChange4" class="text-end text-green">0.11</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol5" class="text-start">AUDUSD</td><td id="moduleQuote1-myAjaxQuotes-Last5" class="text-end text-red">0.6736</td><td id="moduleQuote1-myAjaxQuotes-High5" class="text-end ">0.6754</td><td id="moduleQuote1-myAjaxQuotes-Low5" class="text-end ">0.6723</td><td id="moduleQuote1-myAjaxQuotes-Open5" class="text-end ">0.6754</td><td id="moduleQuote1-myAjaxQuotes-Close5" class="text-end ">0.6754</td><td id="moduleQuote1-myAjaxQuotes-valueChange5" class="text-end text-red">-0.0018</td><td id="moduleQuote1-myAjaxQuotes-percentChange5" class="text-end text-red">-0.27</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol6" class="text-start">EURUSD</td><td id="moduleQuote1-myAjaxQuotes-Last6" class="text-end ">1.0922</td><td id="moduleQuote1-myAjaxQuotes-High6" class="text-end ">1.0937</td><td id="moduleQuote1-myAjaxQuotes-Low6" class="text-end ">1.0915</td><td id="moduleQuote1-myAjaxQuotes-Open6" class="text-end ">1.0937</td><td id="moduleQuote1-myAjaxQuotes-Close6" class="text-end ">1.0937</td><td id="moduleQuote1-myAjaxQuotes-valueChange6" class="text-end ">-0.0015</td><td id="moduleQuote1-myAjaxQuotes-percentChange6" class="text-end ">-0.14</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol7" class="text-start">GBPUSD</td><td id="moduleQuote1-myAjaxQuotes-Last7" class="text-end text-green">1.305</td><td id="moduleQuote1-myAjaxQuotes-High7" class="text-end ">1.3066</td><td id="moduleQuote1-myAjaxQuotes-Low7" class="text-end ">1.304</td><td id="moduleQuote1-myAjaxQuotes-Open7" class="text-end ">1.3066</td><td id="moduleQuote1-myAjaxQuotes-Close7" class="text-end ">1.3067</td><td id="moduleQuote1-myAjaxQuotes-valueChange7" class="text-end text-green">-0.0017</td><td id="moduleQuote1-myAjaxQuotes-percentChange7" class="text-end text-green">-0.13</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol8" class="text-start">USDCHF</td><td id="moduleQuote1-myAjaxQuotes-Last8" class="text-end ">0.8581</td><td id="moduleQuote1-myAjaxQuotes-High8" class="text-end ">0.8585</td><td id="moduleQuote1-myAjaxQuotes-Low8" class="text-end ">0.8449</td><td id="moduleQuote1-myAjaxQuotes-Open8" class="text-end ">0.8449</td><td id="moduleQuote1-myAjaxQuotes-Close8" class="text-end ">0.8572</td><td id="moduleQuote1-myAjaxQuotes-valueChange8" class="text-end ">0.0009</td><td id="moduleQuote1-myAjaxQuotes-percentChange8" class="text-end ">0.1</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol9" class="text-start">USDJPY</td><td id="moduleQuote1-myAjaxQuotes-Last9" class="text-end text-green">149.21</td><td id="moduleQuote1-myAjaxQuotes-High9" class="text-end ">149.37</td><td id="moduleQuote1-myAjaxQuotes-Low9" class="text-end ">149.15</td><td id="moduleQuote1-myAjaxQuotes-Open9" class="text-end ">149.15</td><td id="moduleQuote1-myAjaxQuotes-Close9" class="text-end ">149.15</td><td id="moduleQuote1-myAjaxQuotes-valueChange9" class="text-end text-green">0.06</td><td id="moduleQuote1-myAjaxQuotes-percentChange9" class="text-end text-green">0.04</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol10" class="text-start">Dow Jones</td><td id="moduleQuote1-myAjaxQuotes-Last10" class="text-end ">42863.86</td><td id="moduleQuote1-myAjaxQuotes-High10" class="text-end ">42899.75</td><td id="moduleQuote1-myAjaxQuotes-Low10" class="text-end ">42507.53</td><td id="moduleQuote1-myAjaxQuotes-Open10" class="text-end ">42507.53</td><td id="moduleQuote1-myAjaxQuotes-Close10" class="text-end ">42454.12</td><td id="moduleQuote1-myAjaxQuotes-valueChange10" class="text-end ">409.87</td><td id="moduleQuote1-myAjaxQuotes-percentChange10" class="text-end ">0.97</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol11" class="text-start">FTSE</td><td id="moduleQuote1-myAjaxQuotes-Last11" class="text-end ">8252.73</td><td id="moduleQuote1-myAjaxQuotes-High11" class="text-end ">8265.71</td><td id="moduleQuote1-myAjaxQuotes-Low11" class="text-end ">8211.92</td><td id="moduleQuote1-myAjaxQuotes-Open11" class="text-end ">8237.73</td><td id="moduleQuote1-myAjaxQuotes-Close11" class="text-end ">8237.73</td><td id="moduleQuote1-myAjaxQuotes-valueChange11" class="text-end ">15</td><td id="moduleQuote1-myAjaxQuotes-percentChange11" class="text-end ">0.18</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol12" class="text-start">Nasdaq</td><td id="moduleQuote1-myAjaxQuotes-Last12" class="text-end ">19373.83</td><td id="moduleQuote1-myAjaxQuotes-High12" class="text-end ">19377.1</td><td id="moduleQuote1-myAjaxQuotes-Low12" class="text-end ">19175.78</td><td id="moduleQuote1-myAjaxQuotes-Open12" class="text-end ">19206.31</td><td id="moduleQuote1-myAjaxQuotes-Close12" class="text-end ">19210.9</td><td id="moduleQuote1-myAjaxQuotes-valueChange12" class="text-end ">162.93</td><td id="moduleQuote1-myAjaxQuotes-percentChange12" class="text-end ">0.85</td></tr><tr><td id="moduleQuote1-myAjaxQuotes-Symbol13" class="text-start">RP</td><td id="moduleQuote1-myAjaxQuotes-Last13" class="text-end ">15575</td><td id="moduleQuote1-myAjaxQuotes-High13" class="text-end ">15575</td><td id="moduleQuote1-myAjaxQuotes-Low13" class="text-end ">15575</td><td id="moduleQuote1-myAjaxQuotes-Open13" class="text-end ">15575</td><td id="moduleQuote1-myAjaxQuotes-Close13" class="text-end ">15575</td><td id="moduleQuote1-myAjaxQuotes-valueChange13" class="text-end ">0</td><td id="moduleQuote1-myAjaxQuotes-percentChange13" class="text-end ">0</td></tr>
+                            </tbody>
+                          </table>
+                        
                     </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-news-item">
-                            <div class="news-image">
-                                <a href="#">
-                                    <img src="assets/img/news/SM102.png" class="index-img" alt="image">
-                                </a>
-                            </div>
-    
-                            <div class="news-content mt-20">
-                                <span>Market Analysis</span>
-                                <h3>
-                                    <a href="#">Harga Perak Sedikit Berubah Pasca Rilis Data Inflasi AS</a>
-                                </h3>
-                                <span class="m-date">28 September 2024</span>
-                                <p>Harga diperdagangkan sedikit berubah pada hari Rabu (11/9) setelah mengalami penurunan pasca  dirilisnya data inflasi dari Amerika yang menunjukkan ...</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-news-item">
-                            <div class="news-image">
-                                <a href="#">
-                                    <img src="assets/img/news/SM102.png" class="index-img" alt="image">
-                                </a>
-                            </div>
-    
-                            <div class="news-content mt-20">
-                                <span>Market Analysis</span>
-                                <h3>
-                                    <a href="#">Harga Perak Sedikit Berubah Pasca Rilis Data Inflasi AS</a>
-                                </h3>
-                                <span class="m-date">28 September 2024</span>
-                                <p>Harga diperdagangkan sedikit berubah pada hari Rabu (11/9) setelah mengalami penurunan pasca  dirilisnya data inflasi dari Amerika yang menunjukkan ...</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-news-item">
-                            <div class="news-image">
-                                <a href="#">
-                                    <img src="assets/img/news/SM102.png" class="index-img" alt="image">
-                                </a>
-                            </div>
-    
-                            <div class="news-content mt-20">
-                                <span>Market Analysis</span>
-                                <h3>
-                                    <a href="#">Harga Perak Sedikit Berubah Pasca Rilis Data Inflasi AS</a>
-                                </h3>
-                                <span class="m-date">28 September 2024</span>
-                                <p>Harga diperdagangkan sedikit berubah pada hari Rabu (11/9) setelah mengalami penurunan pasca  dirilisnya data inflasi dari Amerika yang menunjukkan ...</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-news-item">
-                            <div class="news-image">
-                                <a href="#">
-                                    <img src="assets/img/news/SM102.png" class="index-img" alt="image">
-                                </a>
-                            </div>
-    
-                            <div class="news-content mt-20">
-                                <span>Market Analysis</span>
-                                <h3>
-                                    <a href="#">Harga Perak Sedikit Berubah Pasca Rilis Data Inflasi AS</a>
-                                </h3>
-                                <span class="m-date">28 September 2024</span>
-                                <p>Harga diperdagangkan sedikit berubah pada hari Rabu (11/9) setelah mengalami penurunan pasca  dirilisnya data inflasi dari Amerika yang menunjukkan ...</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-news-item">
-                            <div class="news-image">
-                                <a href="#">
-                                    <img src="assets/img/news/SM102.png" class="index-img" alt="image">
-                                </a>
-                            </div>
-    
-                            <div class="news-content mt-20">
-                                <span>Market Analysis</span>
-                                <h3>
-                                    <a href="#">Harga Perak Sedikit Berubah Pasca Rilis Data Inflasi AS</a>
-                                </h3>
-                                <span class="m-date">28 September 2024</span>
-                                <p>Harga diperdagangkan sedikit berubah pada hari Rabu (11/9) setelah mengalami penurunan pasca  dirilisnya data inflasi dari Amerika yang menunjukkan ...</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-news-item">
-                            <div class="news-image">
-                                <a href="#">
-                                    <img src="assets/img/news/SM102.png" class="index-img" alt="image">
-                                </a>
-                            </div>
-    
-                            <div class="news-content mt-20">
-                                <span>Market Analysis</span>
-                                <h3>
-                                    <a href="#">Harga Perak Sedikit Berubah Pasca Rilis Data Inflasi AS</a>
-                                </h3>
-                                <span class="m-date">28 September 2024</span>
-                                <p>Harga diperdagangkan sedikit berubah pada hari Rabu (11/9) setelah mengalami penurunan pasca  dirilisnya data inflasi dari Amerika yang menunjukkan ...</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-news-item">
-                            <div class="news-image">
-                                <a href="#">
-                                    <img src="assets/img/news/SM102.png" class="index-img" alt="image">
-                                </a>
-                            </div>
-    
-                            <div class="news-content mt-20">
-                                <span>Market Analysis</span>
-                                <h3>
-                                    <a href="#">Harga Perak Sedikit Berubah Pasca Rilis Data Inflasi AS</a>
-                                </h3>
-                                <span class="m-date">28 September 2024</span>
-                                <p>Harga diperdagangkan sedikit berubah pada hari Rabu (11/9) setelah mengalami penurunan pasca  dirilisnya data inflasi dari Amerika yang menunjukkan ...</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-news-item">
-                            <div class="news-image">
-                                <a href="#">
-                                    <img src="assets/img/news/SM102.png" class="index-img" alt="image">
-                                </a>
-                            </div>
-    
-                            <div class="news-content mt-20">
-                                <span>Market Analysis</span>
-                                <h3>
-                                    <a href="#">Harga Perak Sedikit Berubah Pasca Rilis Data Inflasi AS</a>
-                                </h3>
-                                <span class="m-date">28 September 2024</span>
-                                <p>Harga diperdagangkan sedikit berubah pada hari Rabu (11/9) setelah mengalami penurunan pasca  dirilisnya data inflasi dari Amerika yang menunjukkan ...</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-news-item">
-                            <div class="news-image">
-                                <a href="#">
-                                    <img src="assets/img/news/SM102.png" class="index-img" alt="image">
-                                </a>
-                            </div>
-    
-                            <div class="news-content mt-20">
-                                <span>Market Analysis</span>
-                                <h3>
-                                    <a href="#">Harga Perak Sedikit Berubah Pasca Rilis Data Inflasi AS</a>
-                                </h3>
-                                <span class="m-date">28 September 2024</span>
-                                <p>Harga diperdagangkan sedikit berubah pada hari Rabu (11/9) setelah mengalami penurunan pasca  dirilisnya data inflasi dari Amerika yang menunjukkan ...</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-news-item">
-                            <div class="news-image">
-                                <a href="#">
-                                    <img src="assets/img/news/SM102.png" class="index-img" alt="image">
-                                </a>
-                            </div>
-    
-                            <div class="news-content mt-20">
-                                <span>Market Analysis</span>
-                                <h3>
-                                    <a href="#">Harga Perak Sedikit Berubah Pasca Rilis Data Inflasi AS</a>
-                                </h3>
-                                <span class="m-date">28 September 2024</span>
-                                <p>Harga diperdagangkan sedikit berubah pada hari Rabu (11/9) setelah mengalami penurunan pasca  dirilisnya data inflasi dari Amerika yang menunjukkan ...</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- start pagination -->
-                    <div class="col-lg-12 col-md-12 mb-5">
-                        <div class="pagination-area">
-                            <a href="#" class="prev page-numbers">
-                                <i class='bx bx-chevron-left'></i>
-                            </a>
-                            <a href="#" class="page-numbers">1</a>
-                            <span class="page-numbers current" aria-current="page">2</span>
-                            <a href="#" class="page-numbers">3</a>
-                            <a href="#" class="page-numbers">4</a>
-                            <a href="#" class="next page-numbers">
-                                <i class='bx bx-chevron-right'></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- end pagination -->
-
                 </div>
             </div>
         </section>
-        <!-- End News Area -->
+        <!-- End New News Area -->
 
         <!-- Start Disclamer -->
          <!--<section class="mb-5">

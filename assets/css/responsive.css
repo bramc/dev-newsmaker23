@@ -368,7 +368,7 @@
   }
   .sDesktop {
     visibility: hidden;
-    display: none;
+    display: none !important;
   }
   .sMobile {
     visibility: visible;
@@ -424,7 +424,7 @@
   }
   .sDesktop {
     visibility: hidden;
-    display: none;
+    display: none !important;
   }
   .sMobile {
     visibility: visible;
@@ -750,7 +750,7 @@
   }
   .sDesktop {
     visibility: hidden;
-    display: none;
+    display: none !important;
   }
   .sMobile {
     visibility: visible;

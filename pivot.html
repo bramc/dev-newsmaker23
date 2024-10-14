@@ -49,13 +49,16 @@
         <!-- Start Top Header Area -->
         <div class="top-header-area bg-color">
             <div class="container">
-                <div class="row align-items-center">
+
+                <!-- show on Desktop -->
+                <div class="row align-items-center sDesktop">
                     <div class="col-lg-6">
                         <ul class="top-header-time">
                             <li><i class='bx bx-calendar'></i><span class="ms-2 me-2">Sun, Sep 8, 2024</span>|</li>
                             <li><strong>JKT</strong> 09:12</li>
                             <li><strong>TKY</strong> 11:12</li>
                             <li><strong>HK</strong> 10:12</li>
+                            <li><strong>LDN</strong> 03:12</li>
                         </ul>
                     </div>
                     <div class="col-lg-6">
@@ -69,13 +72,51 @@
                                 </div>
                             </li>
 
-                            <li>
+                            <!--<li>
                                 <i class='bx bx-user'></i>
                                 <a href="login.html">Login</a>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                 </div>
+
+                <!-- show on Mobile -->
+                <div class="justify-content-between sMobile">
+                    <div>
+                        <ul class="top-header-time">
+                            <li><i class='bx bx-calendar'></i><span class="ms-2 me-2">Sun, Sep 8, 2024</span>|</li>
+                            <li class="dropdown">
+                                <i class='bx bx bxs-time'></i><span class="ms-2 me-2">World Time</span>
+                                <div class="dropdown-content">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>JKT</strong> 09:12</li>
+                                        <li class="list-group-item"><strong>TKY</strong> 11:12</li>
+                                        <li class="list-group-item"><strong>HK</strong> 10:12</li>
+                                        <li class="list-group-item"><strong>LDN</strong> 03:12</li>
+                                      </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="top-header-others">
+                            <li>
+                                <div class="languages-list">
+                                    <select>
+                                        <option value="1">English</option>
+                                        <option value="2">Bahasa</option>
+                                    </select>
+                                </div>
+                            </li>
+
+                            <!--<li>
+                                <i class='bx bx-user'></i>
+                                <a href="login.html">Login</a>
+                            </li>-->
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- End Top Header Area -->
@@ -296,6 +337,26 @@
                     </div>
                 </div>
             </div>
+
+            <!-- show on mobile -->
+            <div class="social-top sMobile">
+                <a href="#" class="facebook" target="_blank">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="#" class="twitter" target="_blank">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="#" class="pinterest" target="_blank">
+                    <i class='bx bxl-tiktok' ></i>
+                </a>
+                <a href="#" class="linkedin" target="_blank">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="#" class="linkedin" target="_blank">
+                    <i class='bx bxl-youtube'></i>
+                </a>
+            </div>
+
         </div>
         <!-- End Navbar Area -->
 
@@ -528,13 +589,125 @@
         
                                     <!--fibonacci-->
                                     <div class="tab-pane fade" id="fibonacci" role="tabpanel" aria-labelledby="profile-tab">
-        
-                                        <!--form Uptrend--> 
-                                        <div class="d-flex mt-4">
+
+                                        <!-- form Uptrend Desktop -->
+                                            <div class="d-flex mt-4 sDesktop">
+                                            
+                                                <div class="d-flex me-5"><img src="assets/img/fibo-uptrend.jpg"></div>
+                                            
+                                                <div class="d-flex me-4">
+                                                                
+                                                    <form action="#" method="post"  id="uptrend-form" class="">
+                                                    
+                                                        <!-- Text input-->
+                                                        <div class="control-group">
+                                                        <label class="control-label mb-2">Price (A)</label>
+                                                        <div class="controls">
+                                                            <input id="ua" name="low" type="text" placeholder="low value" class="form-control">
+                                                            
+                                                        </div>
+                                                        </div>
+                                                        
+                                                        <!-- Text input-->
+                                                        <div class="control-group mt-2">
+                                                        <label class="control-label mb-2">Price (B)</label>
+                                                        <div class="controls">
+                                                            <input id="ub" name="high" type="text" placeholder="high value" class="form-control">
+                                                            
+                                                        </div>
+                                                        </div>
+                                                        
+                                                        <!-- Button -->
+                                                        <div class="mt-2"> 
+                                                            <button type="button" name="calculate" id="up-calculate" class="btn btn-filter">Calculate</button>
+                                                        </div>
+                                                    
+                                                    </form>         
+                                                            
+                                                </div>
+                                            
+                                                <div class="d-flex me-4">
+                                                
+                                                    <table class="table table-bordered table-condensed table-hover" style="width: 200px;">
+                                                        <thead class="header-cal">
+                                                            <tr>
+                                                                <th colspan="2">Retracement</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>23.60%</td>
+                                                                <td id="uv7860">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>38.20%</td>
+                                                                <td id="uv6180">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>50.0%</td>
+                                                                <td id="uv500">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>61.80%</td>
+                                                                <td id="uv3820">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>78.60%</td>
+                                                                <td id="uv2360">0</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                
+                                                
+                                                </div>
+                                            
+                                                <div class="d-flex me-3">
+                                                    <table class="table table-bordered table-condensed table-hover" style="width: 200px;">
+                                                        <thead class="header-cal">
+                                                            <tr>
+                                                                <th colspan="2">Projection</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>138.20%</td>
+                                                                <td id="up13820">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>150.00%</td>
+                                                                <td id="up15000">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>161.80%</td>
+                                                                <td id="up16180">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>200.00%</td>
+                                                                <td id="up20000">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>238.20%</td>
+                                                                <td id="up23820">0</td>
+                                                            </tr>
+                                                            
+                                                            <tr>
+                                                                <td>261.80%</td>
+                                                                <td id="up26180">0</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            
+                                            </div>
+
+
+                                        <!-- form Uptrend Mobile -->
+                                        <div class="container sMobile">
+                                        <div class="row mt-4">
                                         
-                                            <div class="d-flex me-5"><img src="assets/img/fibo-uptrend.jpg"></div>
+                                            <div class="col-lg-4 me-5"><img src="assets/img/fibo-uptrend.jpg"></div>
                                         
-                                            <div class="d-flex me-4">
+                                            <div class="col-lg-4 me-4">
                                                             
                                                 <form action="#" method="post"  id="uptrend-form" class="">
                                                 
@@ -565,9 +738,9 @@
                                                         
                                             </div>
                                         
-                                            <div class="d-flex me-4">
+                                            <div class="col-lg-4 me-4">
                                             
-                                                <table class="table table-bordered table-condensed table-hover" style="width: 200px;">
+                                                <table class="table table-bordered table-condensed table-hover">
                                                     <thead class="header-cal">
                                                         <tr>
                                                             <th colspan="2">Retracement</th>
@@ -600,8 +773,8 @@
                                             
                                             </div>
                                         
-                                            <div class="d-flex me-3">
-                                                <table class="table table-bordered table-condensed table-hover" style="width: 200px;">
+                                            <div class="col-lg-4 me-3">
+                                                <table class="table table-bordered table-condensed table-hover">
                                                     <thead class="header-cal">
                                                         <tr>
                                                             <th colspan="2">Projection</th>
@@ -638,13 +811,13 @@
                                             </div>
                                         
                                         </div>
-                                        
+                                        </div>
                                         
                                         <hr class="blue"> 
                                         
                                                                   
-                                        <!--form Downtrend--> 
-                                        <div class="d-flex mt-4">
+                                        <!--form Downtrend Desktop--> 
+                                        <div class="d-flex mt-4 sDesktop">
                                         
                                             <div class="d-flex me-5"><img src="assets/img/fibo-downtrend.jpg"></div>
                                         
@@ -753,6 +926,119 @@
                                             </div>
                                         
                                         </div>
+
+                                        <!--form Downtrend Mobile--> 
+                                        <div class="container sMoble">
+                                        <div class="row mt-4">
+                                        
+                                            <div class="col-lg-4 me-5"><img src="assets/img/fibo-downtrend.jpg"></div>
+                                        
+                                            <div class="col-lg-4 me-4">          
+                                                                           
+                                                <form action="#" method="post"  id="downtrend-form" class="">
+                                                                                   
+                                                    <!-- Text input-->
+                                                    <div class="control-group">
+                                                        <label class="control-label">Price (A)</label>
+                                                        <div class="controls">
+                                                            <input id="da" name="low" type="number" placeholder="high value" class="form-control">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                
+                                                    <!-- Text input-->
+                                                    <div class="control-group mt-2">
+                                                        <label class="control-label mb-2">Price (B)</label>
+                                                        <div class="controls">
+                                                            <input id="db" name="high" type="number" placeholder="low value" class="form-control">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!-- Button -->
+                                                    <div class="mt-2"> 
+                                                        <button type="button" name="calculate" id="down-calculate" class="btn btn-filter">Calculate</button>
+                                                    </div>
+                                                
+                                                </form>         
+                                                        
+                                            </div>
+                                        
+                                            <div class="col-lg-4 me-4">
+                                            
+                                                <table class="table table-bordered table-condensed table-hover">
+                                                    <thead class="header-cal">
+                                                        <tr>
+                                                            <th colspan="2">Retracement</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>78.60%</td>
+                                                        <td id="dv2360">0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>61.80%</td>
+                                                        <td id="dv3820">0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>50.0%</td>
+                                                        <td id="dv500">0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>38.20%</td>
+                                                        <td id="dv6180">0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>23.60%</td>
+                                                        <td id="dv7860">0</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            
+                                            
+                                            </div>
+                                            
+                                            <div class="col-lg-4 me-4">
+                                            
+                                                <table class="table table-bordered table-condensed table-hover">
+                                                    <thead class="header-cal">
+                                                        <tr>
+                                                            <th colspan="2">Projection</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>138.20%</td>
+                                                            <td id="dp13820">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>150.00%</td>
+                                                            <td id="dp15000">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>161.80%</td>
+                                                            <td id="dp16180">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>200.00%</td>
+                                                            <td id="dp20000">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>238.20%</td>
+                                                            <td id="dp23820">0</td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td>261.80%</td>
+                                                            <td id="dp26180">0</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        
+                                        </div>
+                                        </div>
         
                                     <!-- /fibonaci chart-->
         
@@ -763,6 +1049,8 @@
                                             <!--Filter-->
                                             <div class="d-inline-flex date-con">
                                                 <select name="currencies" class="mt-3">
+                                                    <option value="1">LGD Daily</option>
+                                                    <option value="1">EUR/USD</option>
                                                     <option value="1">EUR/USD</option>
                                                     <option value="2">USD/JPY</option>
                                                     <option value="3">USD/CHF</option>
