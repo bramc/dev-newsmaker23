@@ -4474,6 +4474,7 @@ News Details Area CSS
 =================================================*/
 .blog-details-desc .article-image {
   position: relative;
+  border: 1px solid #BCC1C8;
 }
 .blog-details-desc .article-image i {
   font-size: 100px;
@@ -5217,6 +5218,7 @@ Buy Now Btn
 }
 
 .detail-img {
+  width: 100%;
   height: 475px;
   object-fit: cover;
   border: 1px solid #eeeeee;
