@@ -1181,6 +1181,7 @@ Default News Area CSS
 }
 .single-most-popular-news .popular-news-image {
   overflow: hidden;
+  border: 1px solid #BCC1C8;
 }
 .single-most-popular-news .popular-news-image img {
   transition: 0.5s;
@@ -4394,6 +4395,7 @@ News Area CSS
   overflow: hidden;
   position: relative;
   text-align: center;
+  border: 1px solid #BCC1C8;
 }
 .single-news-item .news-image img {
   transition: 0.5s;
