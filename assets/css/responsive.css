@@ -43,7 +43,7 @@
   .main-responsive-nav .logo img {
     /*max-width: 155px !important;*/
     position: relative;
-    z-index: 99999;
+    z-index: 9999;
   }
   .main-responsive-nav .main-responsive-menu {
     position: relative;
@@ -389,6 +389,30 @@
   .single-footer-widget .social {
     margin-top: 0;
   }
+  .lc-sticky {
+    top: 113px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    position: sticky;
+    background: #fff;
+  }
+  .index-img-market {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border: 1px solid #eeeeee;
+  }
+  .detail-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border: 1px solid #eeeeee;
+  }
+  .news {
+    width: 100px !important;
+  
+  }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .top-header-area.bg-color {
@@ -443,6 +467,29 @@
   }
   .single-footer-widget .social {
     margin-top: 0;
+  }
+  .lc-sticky {
+    top: 113px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    position: sticky;
+    background: #fff;
+  }
+  .index-img-market {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border: 1px solid #eeeeee;
+  }
+  .detail-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border: 1px solid #eeeeee;
+  }
+  .news {
+    width: 100px !important;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -761,6 +808,14 @@
   }
   .top-header-others .languages-list .nice-select .list {
     width: 100px;
+  }
+  .lc-sticky {
+    top: 113px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    position: sticky;
+    background: #fff;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
