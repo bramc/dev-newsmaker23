@@ -413,9 +413,7 @@
     width: 100px !important;
   
   }
-  .social-top {
-    left: 195px;
-  }
+
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .top-header-area.bg-color {
@@ -823,6 +821,12 @@
     position: sticky;
     background: #fff;
   }
+  .social-top {
+    left: 280px;
+  }
+  .mean-container a.meanmenu-reveal {
+    padding: 51px 0 0 0;
+}
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .top-header-area.bg-color {
@@ -991,6 +995,20 @@
   }
   .cal-home {
     height: auto;
+  }
+  .sDesktop {
+    visibility: hidden;
+    display: none !important;
+  }
+  .sMobile {
+    visibility: visible;
+    display: flex;
+  }
+  .social-top {
+    left: 195px;
+  }
+  .mean-container a.meanmenu-reveal {
+    padding: 51px 0 0 0;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
