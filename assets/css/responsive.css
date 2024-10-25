@@ -22,7 +22,7 @@
     z-index: 999999;
   }
   .mean-container a.meanmenu-reveal {
-    padding: 26px 0 0 0;
+    padding: 24px 0 0 0;
   }
   .mean-container a.meanmenu-reveal span {
     display: block;
@@ -413,7 +413,38 @@
     width: 100px !important;
   
   }
-
+}
+@media only screen and (max-width: 345px) {
+  .top-header-time {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .top-header-others {
+    text-align: right;
+  }
+  .top-header-others li {
+    margin-right: 0;
+  }
+  .cal-home {
+    height: auto;
+  }
+  .sDesktop {
+    visibility: hidden;
+    display: none !important;
+  }
+  .sMobile {
+    visibility: visible;
+    display: flex;
+  }
+  .social-top {
+    left: 97px !important;
+  }
+  .others-option-for-responsive .dot-menu {
+    right: 52px;
+}
+  .mean-container a.meanmenu-reveal {
+    padding: 23px 0 0 0;
+  }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .top-header-area.bg-color {
